@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/background_shadow"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout4">
+
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="50dp"
+                android:src="@drawable/gift"
+                android:layout_height="50dp"
+                android:id="@+id/imageView11" />
+            <TextView
+                android:layout_marginTop="-2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#535353"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Doação Realizada"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignTop="@+id/imageView11"
+                android:layout_toRightOf="@+id/imageView11"
+                android:layout_toEndOf="@+id/imageView11"
+                android:id="@+id/tvTitle" />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tvTitle"
+                android:layout_alignLeft="@+id/tvTitle"
+                android:layout_alignStart="@+id/tvTitle"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:id="@+id/tvDescription"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="5"
+                        android:id="@+id/tvMaterial"
+                        android:layout_marginRight="15dp"
+                        android:textSize="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text='Tipo: Plástico'/>
+                    <TextView
+                        android:id="@+id/tvPeso"
+                        android:layout_weight="5"
+                        android:textSize="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text='Peso: 5kg'/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tvRegiao"
+                    android:layout_marginRight="15dp"
+                    android:textSize="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text='Região: Hiius Islandy'/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tvDoador"
+                    android:layout_marginRight="15dp"
+                    android:textSize="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text='Doador: Alguem cara'/>
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/tvDescription"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/corner_grey_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:id="@+id/relativeLayout3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_weight="35"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:src="@drawable/chatting"
+                            android:layout_height="50dp"
+                            android:id="@+id/imageView2" />
+
+                        <TextView
+                            android:id="@+id/tvTitle2"
+                            android:layout_alignParentTop="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="33dp"
+                            android:layout_marginStart="33dp"
+                            android:layout_toEndOf="@+id/imageView2"
+                            android:layout_toRightOf="@+id/imageView2"
+                            android:text="Usuário Receptor"
+                            android:textColor="#535353"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/tvTitle2"
+                            android:layout_marginLeft="33dp"
+                            android:layout_marginStart="33dp"
+                            android:layout_toEndOf="@+id/imageView2"
+                            android:layout_toRightOf="@+id/imageView2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tvNome"
+                                android:layout_marginRight="15dp"
+                                android:textSize="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"
+                                android:text='Usuário: Wilton Ribiero C. Neto'/>
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/tvEmail"
+                                android:textSize="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"
+                                android:text='Email: willrcneto@gmail.com'/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

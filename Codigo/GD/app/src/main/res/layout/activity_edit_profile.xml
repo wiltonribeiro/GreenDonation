@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.will.greendonation.Activies.EditProfile">
+
+    <ScrollView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:scrollingCache="false"
+        android:persistentDrawingCache="scrolling"
+        android:fastScrollEnabled="true"
+        android:cacheColorHint="@android:color/transparent"
+        android:background="@android:color/transparent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/left_arrow"
+                android:layout_margin="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/button" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/avatar"
+                app:civ_border_color="#FFF"
+                app:civ_border_width="2dp" />
+
+            <Button
+                android:textSize="10dp"
+                android:layout_marginTop="-5dp"
+                android:textColor="#fff"
+                android:id="@+id/btn_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selecionar Imagem de Perfil"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/btn_picture"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:padding="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="50"
+                        android:layout_height="90dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/icon"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_weight="20"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp">
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:id="@+id/input_name"
+                            android:layout_width="match_parent"
+                            android:minHeight="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/edit_text"
+                            android:layout_margin="10dp"
+                            android:textSize="15dp"
+                            android:hint="Nome / Empresa"
+                            android:textColorHint="#f5f4f9"
+                            android:textAlignment="center"
+                            android:textColor="#fff" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:padding="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="50"
+                        android:layout_height="90dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/contact"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_weight="20"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp">
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:id="@+id/input_contact"
+                            android:layout_width="match_parent"
+                            android:minHeight="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/edit_text"
+                            android:layout_margin="10dp"
+                            android:inputType="number"
+                            android:textSize="15dp"
+                            android:hint="Contato"
+                            android:textColorHint="#f5f4f9"
+                            android:textAlignment="center"
+                            android:textColor="#fff" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:padding="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="50"
+                        android:layout_height="90dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/city"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_weight="20"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp">
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:id="@+id/input_addres"
+                            android:layout_width="match_parent"
+                            android:minHeight="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/edit_text"
+                            android:layout_margin="10dp"
+                            android:textSize="15dp"
+                            android:hint="Endereço"
+                            android:textColorHint="#f5f4f9"
+                            android:textAlignment="center"
+                            android:textColor="#fff" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:padding="20dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/btn_update"
+                        android:text="ATUALIZAR"
+                        android:textColor="#fff"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/corner_transparent"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.will.greendonation.Activies.Entregues">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/teste" />
+
+    <RelativeLayout
+        android:id="@+id/nothing_doacao_entregue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="200dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:src="@drawable/sad"
+                android:layout_marginBottom="10dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:text="Você não possui nenhuma doação completa"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:divider="@android:color/transparent"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:id="@+id/list_doacao_entregue"
+        android:layout_height="match_parent">
+    </ListView>
+
+</RelativeLayout>

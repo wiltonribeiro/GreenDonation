@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.will.greendonation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activies.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activies.RegisterUser" />
+        <activity android:name=".Activies.Doador.DoadorActivity" />
+        <activity android:name=".Activies.Coletador.ColetadorActivity" />
+        <activity android:name=".Activies.EditProfile" />
+        <activity android:name=".Activies.Coletador.Solicitacoes" />
+        <activity android:name=".Activies.Coletador.LancarSolicitacao" />
+        <activity android:name=".Activies.Doador.NotificacoesDoador" />
+        <activity android:name=".Activies.Doador.LancarDoacao" />
+        <activity android:name=".Activies.Coletador.DoacoesColetador" />
+        <activity android:name=".Activies.Estatisticas" />
+        <activity android:name=".Activies.Entregues" />
+        <activity android:name=".Activies.Doador.EstatisticaDoador" />
+        <activity android:name=".Activies.Coletador.EstatisticasColetador"></activity>
+    </application>
+
+</manifest>
