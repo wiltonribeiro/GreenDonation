@@ -12,6 +12,4 @@ Diante do sistema proposto, é esperado considerável redução do acúmulo de l
 ###### Diagrama de Classes:
 <img src="https://raw.githubusercontent.com/wiltonribeiro/GreenDonation/master/Diagrama%20de%20Classes/POO-%20DiagramaImage.jpg" />
 
-###### Observações Gerais. Não foi desenvolvido para o software nenhuma implementação persistência de dados, apenas o uso em memória. Dado o
-objetivo da disciplina de POO, o desenvolvimento da aplicação pôs em foco as características da displina, bem como o uso da mesma para mostrar a aimportância do
-uso dos princípios no desenvolvimento Mobile.
+###### Observações Gerais. Não foi desenvolvido para o software nenhuma implementação persistência de dados, apenas o uso em memória. Dado objetivo da disciplina de POO, o desenvolvimento da aplicação pôs em foco as características da disciplina, bem como o uso da mesma para mostrar a importância do uso dos princípios no desenvolvimento Mobile.
